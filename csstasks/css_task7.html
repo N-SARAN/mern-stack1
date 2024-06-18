@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TASK-7</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .outer {
+        background-color: #6b3e9e; /* Royal purple */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 800px;
+        max-width: 90%;
+      }
+      .inner {
+        background-color: #4b2873; /* Dark royal purple */
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .inner-table {
+        width: 100%;
+      }
+      tr > td {
+        padding-bottom: 15px;
+      }
+      tr > td > label {
+        color: white;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"],
+      input[type="number"],
+      select,
+      textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #8e44ad; /* Royal purple */
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #6c3483; /* Darker royal purple */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <form action="#" method="get" class="inner">
+        <table class="inner-table">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input type="password" name="password" id="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phonenum">Phone Number:</label></td>
+            <td><input type="tel" name="phonenum" id="phonenum" required /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              <label for="male"
+                ><input
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="male"
+                  required
+                />
+                Male</label
+              >
+              <label for="female"
+                ><input
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                  required
+                />
+                Female</label
+              >
+              <label for="other"
+                ><input
+                  type="radio"
+                  name="gender"
+                  id="other"
+                  value="other"
+                  required
+                />
+                Other</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="language">Language:</label></td>
+            <td>
+              <select name="language" id="language" required>
+                <option value="">Select language</option>
+                <option value="kannada">Kannada</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zipcode">Zip Code:</label></td>
+            <td>
+              <input type="number" name="zipcode" id="zipcode" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="about">About:</label></td>
+            <td>
+              <textarea
+                name="about"
+                id="about"
+                cols="30"
+                rows="3"
+                placeholder="Write about yourself..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" value="Register" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

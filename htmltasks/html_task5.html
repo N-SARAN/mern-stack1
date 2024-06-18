@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-5</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .id {
+        text-align: center;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+      .val input,
+      .val textarea,
+      .val select {
+        width: 90%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .val textarea {
+        resize: vertical;
+      }
+      .val input[type="radio"],
+      .val input[type="checkbox"] {
+        width: auto;
+      }
+      .id1,
+      .id2 {
+        text-align: center;
+        padding-top: 10px;
+      }
+      .id2 a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .id2 a:hover {
+        text-decoration: underline;
+      }
+      button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form>
+      <table>
+        <tr>
+          <td class="id">First Name</td>
+          <td class="val"><input type="text" required /></td>
+        </tr>
+        <tr>
+          <td class="id">Last Name</td>
+          <td class="val"><input type="text" required /></td>
+        </tr>
+        <tr>
+          <td class="id">Email</td>
+          <td class="val"><input type="email" required /></td>
+        </tr>
+        <tr>
+          <td class="id">Password</td>
+          <td class="val"><input type="password" required /></td>
+        </tr>
+        <tr>
+          <td class="id">Re-enter Password</td>
+          <td class="val"><input type="password" required /></td>
+        </tr>
+        <tr>
+          <td class="id">Gender</td>
+          <td class="val">
+            <input type="radio" name="gender" required /> Male
+            <br />
+            <input type="radio" name="gender" required /> Female
+          </td>
+        </tr>
+        <tr>
+          <td class="id">Age</td>
+          <td class="val"><input type="number" /></td>
+        </tr>
+        <tr>
+          <td class="id">Phone Number</td>
+          <td class="val"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="id">Address</td>
+          <td class="val"><textarea rows="5" cols="60"></textarea></td>
+        </tr>
+        <tr>
+          <td class="id">State</td>
+          <td class="val"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td class="id">Country</td>
+          <td class="val">
+            <select>
+              <option value="ch">Choose your Country</option>
+              <option value="ind">India</option>
+              <option value="aus">Australia</option>
+              <option value="ger">Germany</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="id">Languages known</td>
+          <td class="val">
+            <input type="checkbox" /> English <input type="checkbox" /> Kannada
+            <input type="checkbox" /> Hindi <input type="checkbox" /> Telugu
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="id1">
+            <input type="checkbox" required /> Hereby I declare all the given
+            details are true
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="id2">
+            Login to
+            <a href="https://ethnus.com/" target="_blank">Ethnus</a> website
+          </td>
+        </tr>
+      </table>
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

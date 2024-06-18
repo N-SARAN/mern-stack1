@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TASK-2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 20px;
+      }
+      .vertical-menu {
+        width: 200px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .vertical-menu h2 {
+        margin: 0 0 10px;
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      .vertical-menu a {
+        display: block;
+        color: blue;
+        background-color: #d2f0f0;
+        padding: 10px;
+        text-decoration: none;
+      }
+      .vertical-menu a:hover {
+        background-color: orange;
+        color: white;
+      }
+      .horizontal-menu {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        padding: 10px;
+      }
+      .horizontal-menu h2 {
+        margin: 0 0 10px;
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+        width: 100%;
+      }
+      .horizontal-menu div {
+        display: flex;
+        width: 100%;
+      }
+      .horizontal-menu a {
+        color: blue;
+        background-color: #d2cccc;
+        padding: 14px 20px;
+        text-decoration: none;
+        border-right: 1px solid white;
+        display: block;
+      }
+      .horizontal-menu a:hover {
+        background-color: gray;
+        color: white;
+      }
+      .horizontal-menu a:first-child {
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+      }
+      .horizontal-menu a:last-child {
+        border-right: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vertical-menu">
+      <h2>Vertical Navigation Bar</h2>
+      <a href="#" style="background-color: orange; font-weight: bold">Home</a>
+      <a href="#">Java</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML</a>
+      <a href="#">Bootstrap</a>
+    </div>
+    <div class="horizontal-menu">
+      <h2>Horizontal Navigation Bar</h2>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+      </div>
+    </div>
+  </body>
+</html>
